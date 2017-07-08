@@ -15,6 +15,24 @@ namespace AIProjectTrial
         public AIPro()
         {
             InitializeComponent();
+            
+            clickBtn1.Click += new EventHandler(clickBtn_clicked);
+            clickBtn2.Click += new EventHandler(clickBtn_clicked);
+            clickBtn3.Click += new EventHandler(clickBtn_clicked);
+            
+            //demoCheckBox.Checked = true;
+            demoCheckBox.CheckedChanged += new EventHandler(demoCheckBox_checkedChanged);
+        }
+
+        private void demoCheckBox_checkedChanged(object sender, EventArgs e)
+        {
+            if (demoCheckBox.Checked)
+                MessageBox.Show("Git Box");
+        }
+
+        private void clickBtn_clicked(object sender, EventArgs e)
+        {
+            MessageBox.Show("OK!");
         }
     }
 }
