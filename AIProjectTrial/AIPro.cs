@@ -12,27 +12,32 @@ namespace AIProjectTrial
 {
     public partial class AIPro : Form
     {
+        private string _user = "admin", _pass = "11235";
+
         public AIPro()
         {
             InitializeComponent();
-            
-            clickBtn1.Click += new EventHandler(clickBtn_clicked);
-            clickBtn2.Click += new EventHandler(clickBtn_clicked);
-            clickBtn3.Click += new EventHandler(clickBtn_clicked);
-            
-            //demoCheckBox.Checked = true;
-            demoCheckBox.CheckedChanged += new EventHandler(demoCheckBox_checkedChanged);
+
+            loginBtn.Click += new EventHandler(loginBtn_clicked);
         }
 
-        private void demoCheckBox_checkedChanged(object sender, EventArgs e)
+        private void loginBtn_clicked(object sender, EventArgs e)
         {
-            if (demoCheckBox.Checked)
-                MessageBox.Show("Git Box");
-        }
-
-        private void clickBtn_clicked(object sender, EventArgs e)
-        {
-            MessageBox.Show("OK!");
+            string user = usernameEdt.Text,
+                   pass = passwordEdt.Text;
+            if (user == _user && pass == _pass)
+            {
+                user += " (*)";
+                pass += " (*)";
+                MessageBox.Show("SUCCESSFUL!", "Sign in options");
+            }
+            else
+            {
+                MessageBox.Show("FAIL!", "Sign in options");
+            }
+            
+            userBox.Items.Add(user);
+            passBox.Items.Add(pass);
         }
     }
 }
