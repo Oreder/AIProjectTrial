@@ -38,7 +38,10 @@
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelCo = new System.Windows.Forms.Label();
             this.menuPaintDemo.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPaintDemo
@@ -115,17 +118,37 @@
             this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem3.Text = "R&esize";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.labelCo);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 383);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(752, 21);
+            this.panel1.TabIndex = 1;
+            // 
+            // labelCo
+            // 
+            this.labelCo.AutoSize = true;
+            this.labelCo.Location = new System.Drawing.Point(8, 5);
+            this.labelCo.Name = "labelCo";
+            this.labelCo.Size = new System.Drawing.Size(0, 13);
+            this.labelCo.TabIndex = 0;
+            // 
             // PaintDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 404);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuPaintDemo);
             this.MainMenuStrip = this.menuPaintDemo;
             this.Name = "PaintDemo";
             this.Text = "Paint";
             this.menuPaintDemo.ResumeLayout(false);
             this.menuPaintDemo.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +166,8 @@
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelCo;
     }
 }
 

@@ -1,0 +1,8 @@
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\bin\Debug\PaintDemo.exe.config
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\bin\Debug\PaintDemo.exe
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\bin\Debug\PaintDemo.pdb
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.PaintDemo.resources
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.Properties.Resources.resources
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.csproj.GenerateResource.Cache
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.exe
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.pdb

@@ -8,3 +8,5 @@ C:\Users\nguye\Desktop\Revision\AIProjectTrial\AIProjectTrial\obj\Debug\AIProjec
 C:\Users\nguye\Desktop\Revision\AIProjectTrial\AIProjectTrial\obj\Debug\AIProjectTrial.csproj.GenerateResource.Cache
 C:\Users\nguye\Desktop\Revision\AIProjectTrial\AIProjectTrial\obj\Debug\AIProjectTrial.exe
 C:\Users\nguye\Desktop\Revision\AIProjectTrial\AIProjectTrial\obj\Debug\AIProjectTrial.pdb
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\AIProjectTrial\bin\Debug\PaintDemo.exe
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\AIProjectTrial\bin\Debug\PaintDemo.pdb

@@ -16,7 +16,8 @@ namespace AIProjectTrial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AIPro());
+            //Application.Run(new AIPro());
+            Application.Run(new PaintDemo.PaintDemo());
         }
     }
 }
