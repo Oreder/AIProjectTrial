@@ -19,6 +19,7 @@ namespace AIProjectTrial
             InitializeComponent();
 
             loginBtn.Click += new EventHandler(loginBtn_clicked);
+            this.flowLayoutPanel.BackColor = Color.ForestGreen;
         }
 
         private void loginBtn_clicked(object sender, EventArgs e)
@@ -38,6 +39,30 @@ namespace AIProjectTrial
             
             userBox.Items.Add(user);
             passBox.Items.Add(pass);
+        }
+
+        private void removePanelBtn_Click(object sender, EventArgs e)
+        {
+            if (removePanelBtn.Text == "Remove Panel")
+            {
+                removePanelBtn.Text = "Undo Removing Panel";
+                this.Controls.Remove(this.flowLayoutPanel);
+            }
+            else if (removePanelBtn.Text == "Undo Removing Panel")
+            {
+                // setting up FlowLayoutPanel
+                FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
+                flowLayoutPanel.BackColor = Color.OrangeRed;
+                flowLayoutPanel.Location = new Point(12, 165);
+                flowLayoutPanel.Size = new Size(345, 145);
+                flowLayoutPanel.Controls.Add(new Button());
+                flowLayoutPanel.Controls.Add(new Button());
+                flowLayoutPanel.Controls.Add(new Button());
+
+                // using Control
+                this.Controls.Add(flowLayoutPanel);
+                removePanelBtn.Text = "Remove Panel";
+            }
         }
     }
 }
