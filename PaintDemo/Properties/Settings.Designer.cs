@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AIProjectTrial.Properties
+namespace PaintDemo.Properties
 {
 
 

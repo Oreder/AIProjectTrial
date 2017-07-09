@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{445BC442-3B8C-49F0-AEDF-FE74F4975FFA}</ProjectGuid>
+    <ProjectGuid>{0979E2FE-352F-4184-9D73-762EBFC34534}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AIProjectTrial</RootNamespace>
-    <AssemblyName>AIProjectTrial</AssemblyName>
+    <RootNamespace>PaintDemo</RootNamespace>
+    <AssemblyName>PaintDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,16 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AIPro.cs">
+    <Compile Include="PaintDemo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AIPro.Designer.cs">
-      <DependentUpon>AIPro.cs</DependentUpon>
+    <Compile Include="PaintDemo.Designer.cs">
+      <DependentUpon>PaintDemo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AIPro.resx">
-      <DependentUpon>AIPro.cs</DependentUpon>
+    <EmbeddedResource Include="PaintDemo.resx">
+      <DependentUpon>PaintDemo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

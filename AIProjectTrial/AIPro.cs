@@ -20,6 +20,26 @@ namespace AIProjectTrial
 
             loginBtn.Click += new EventHandler(loginBtn_clicked);
             this.flowLayoutPanel.BackColor = Color.ForestGreen;
+            this.BackColor = Color.Gold;
+
+            this.MouseHover += new EventHandler(AI_FormMouseHover);
+            this.MouseLeave += new EventHandler(AI_FormMouseLeave);
+            this.MouseClick += AIPro_MouseClick;
+        }
+
+        private void AIPro_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.BackColor = Color.PowderBlue;
+        }
+
+        private void AI_FormMouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Gold;
+        }
+
+        private void AI_FormMouseHover(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Firebrick;
         }
 
         private void loginBtn_clicked(object sender, EventArgs e)
@@ -64,5 +84,6 @@ namespace AIProjectTrial
                 removePanelBtn.Text = "Remove Panel";
             }
         }
+
     }
 }
