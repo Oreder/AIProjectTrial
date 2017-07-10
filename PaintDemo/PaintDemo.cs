@@ -16,6 +16,9 @@ namespace PaintDemo
         private Point _p2;
         private bool _isDown;
 
+        private Graphics g;
+        private Bitmap bmp;
+
         public PaintDemo()
         {
             InitializeComponent();
@@ -25,6 +28,14 @@ namespace PaintDemo
             this.MouseUp += PaintDemo_MouseUp;
 
             this.Paint += PaintDemo_Paint;
+
+            bmp = new Bitmap(this.Width, this.Height);
+            g = Graphics.FromImage(bmp);
+
+            // optimise form vibration
+            this.SetStyle(ControlStyles.UserPaint, true);
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
 
         void PaintDemo_Paint(object sender, PaintEventArgs e)
@@ -38,6 +49,8 @@ namespace PaintDemo
         void PaintDemo_MouseUp(object sender, MouseEventArgs e)
         {
             _isDown = false;
+            g.DrawLine(new Pen(Color.Red, 1.5f), _p1, _p2);
+            this.BackgroundImage = (Bitmap)bmp.Clone();
         }
 
         void PaintDemo_MouseMove(object sender, MouseEventArgs e)
@@ -49,7 +62,6 @@ namespace PaintDemo
                 this.Refresh();     // reset and receive new status of form
             }
         }
-
 
         void PaintDemo_MouseDown(object sender, MouseEventArgs e)
         {

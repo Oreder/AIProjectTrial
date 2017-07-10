@@ -6,3 +6,4 @@ C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.Pro
 C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.csproj.GenerateResource.Cache
 C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.exe
 C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.pdb
+C:\Users\nguye\Desktop\Revision\AIProjectTrial\PaintDemo\obj\Debug\PaintDemo.csprojResolveAssemblyReference.cache
