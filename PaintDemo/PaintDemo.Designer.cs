@@ -38,10 +38,15 @@
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnTail = new System.Windows.Forms.Panel();
             this.labelCo = new System.Windows.Forms.Label();
+            this.pnTitle = new System.Windows.Forms.Panel();
+            this.pnLeft = new System.Windows.Forms.Panel();
+            this.pnRight = new System.Windows.Forms.Panel();
+            this.chooseColorBtn = new System.Windows.Forms.Button();
             this.menuPaintDemo.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnTail.SuspendLayout();
+            this.pnTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPaintDemo
@@ -69,25 +74,25 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             // 
             // editToolStripMenuItem
@@ -103,29 +108,30 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(106, 22);
             this.toolStripMenuItem3.Text = "R&esize";
             // 
-            // panel1
+            // pnTail
             // 
-            this.panel1.Controls.Add(this.labelCo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 383);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 21);
-            this.panel1.TabIndex = 1;
+            this.pnTail.BackColor = System.Drawing.Color.Green;
+            this.pnTail.Controls.Add(this.labelCo);
+            this.pnTail.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnTail.Location = new System.Drawing.Point(0, 383);
+            this.pnTail.Name = "pnTail";
+            this.pnTail.Size = new System.Drawing.Size(752, 21);
+            this.pnTail.TabIndex = 1;
             // 
             // labelCo
             // 
@@ -135,20 +141,62 @@
             this.labelCo.Size = new System.Drawing.Size(0, 13);
             this.labelCo.TabIndex = 0;
             // 
+            // pnTitle
+            // 
+            this.pnTitle.BackColor = System.Drawing.Color.OrangeRed;
+            this.pnTitle.Controls.Add(this.chooseColorBtn);
+            this.pnTitle.Controls.Add(this.pnRight);
+            this.pnTitle.Controls.Add(this.pnLeft);
+            this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTitle.Location = new System.Drawing.Point(0, 24);
+            this.pnTitle.Name = "pnTitle";
+            this.pnTitle.Size = new System.Drawing.Size(752, 72);
+            this.pnTitle.TabIndex = 2;
+            // 
+            // pnLeft
+            // 
+            this.pnLeft.BackColor = System.Drawing.Color.Black;
+            this.pnLeft.Location = new System.Drawing.Point(570, 11);
+            this.pnLeft.Name = "pnLeft";
+            this.pnLeft.Size = new System.Drawing.Size(52, 50);
+            this.pnLeft.TabIndex = 0;
+            this.pnLeft.Click += new System.EventHandler(this.pnLeft_Click);
+            // 
+            // pnRight
+            // 
+            this.pnRight.BackColor = System.Drawing.Color.White;
+            this.pnRight.Location = new System.Drawing.Point(628, 29);
+            this.pnRight.Name = "pnRight";
+            this.pnRight.Size = new System.Drawing.Size(34, 32);
+            this.pnRight.TabIndex = 0;
+            this.pnRight.Click += new System.EventHandler(this.pnRight_Click);
+            // 
+            // chooseColorBtn
+            // 
+            this.chooseColorBtn.Location = new System.Drawing.Point(668, 3);
+            this.chooseColorBtn.Name = "chooseColorBtn";
+            this.chooseColorBtn.Size = new System.Drawing.Size(81, 66);
+            this.chooseColorBtn.TabIndex = 1;
+            this.chooseColorBtn.Text = "    Choose      color";
+            this.chooseColorBtn.UseVisualStyleBackColor = true;
+            this.chooseColorBtn.Click += new System.EventHandler(this.chooseColorBtn_Click);
+            // 
             // PaintDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 404);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnTitle);
+            this.Controls.Add(this.pnTail);
             this.Controls.Add(this.menuPaintDemo);
             this.MainMenuStrip = this.menuPaintDemo;
             this.Name = "PaintDemo";
             this.Text = "Paint";
             this.menuPaintDemo.ResumeLayout(false);
             this.menuPaintDemo.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnTail.ResumeLayout(false);
+            this.pnTail.PerformLayout();
+            this.pnTitle.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,8 +214,12 @@
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnTail;
         private System.Windows.Forms.Label labelCo;
+        private System.Windows.Forms.Panel pnTitle;
+        private System.Windows.Forms.Button chooseColorBtn;
+        private System.Windows.Forms.Panel pnRight;
+        private System.Windows.Forms.Panel pnLeft;
     }
 }
 
